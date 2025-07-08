@@ -20,6 +20,14 @@
       transition: background 1s ease;
     }
 
+    body.scrolled {
+      overflow: auto;
+      height: auto;
+      cursor: default;
+      align-items: flex-start;
+      padding-top: 5vh;
+    }
+
     #container {
       text-align: center;
       max-width: 90%;
@@ -99,7 +107,7 @@
       title.style.display = "none";
       hint.style.display = "none";
       content.classList.remove("hidden");
-      document.body.style.overflow = "auto";
+      document.body.classList.add("scrolled");
     });
   </script>
 </body>
